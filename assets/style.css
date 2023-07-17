@@ -1,0 +1,61 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ /* creating var in css */
+ :root{
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(212, 45%, 89%);
+    --blue-Light: hsl(220, 15%, 55%);
+    --blue-dark:  hsl(218, 44%, 22%);
+
+    --font-size: 15px;
+    --font-size-title: 23px;
+    --weight-min: 400;
+    --weight-max:700;
+  } 
+  body{
+    background-color: var(--gray);
+    font-family: "Roboto", sans-serif;
+  }
+  .card{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--white);
+    width: 20rem;
+    
+  }
+  .card, .img-fluid{
+    border-radius: 20px;
+  }
+  .card-title{
+    font-size: var(--font-size-title);
+    font-weight: var(--weight-max);
+  }
+  .card-text{
+    font-size: var(--font-size);
+
+  }
+  @media (max-width: 375px) {
+
+    .card{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: var(--white);
+        width: 85%;
+      }
+      .card, .img-fluid{
+        border-radius: 20px;
+      }
+      .card-title{
+        font-size: var(--font-size-title);
+        font-weight: var(--weight-max);
+      }
+      .card-text{
+        font-size: var(--font-size);
+
+      }
+    
+  }
+
